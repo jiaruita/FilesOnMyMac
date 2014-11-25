@@ -9,7 +9,13 @@ class FileObj(object):
         self.size = size
 
     def __lt__(self, other):
-        return self.size < other.size
+        return self.size > other.size
+
+    def __str__(self):
+        return 'Name: %s\tPath: %s\tSize: %d' %(self.name, self.path, self.size)
+
+    def __repr__(self):
+        return 'Name: %s\tPath: %s\tSize: %d' %(self.name, self.path, self.size)
 
 
 class DirObj(FileObj):
