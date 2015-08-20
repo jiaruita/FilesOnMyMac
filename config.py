@@ -11,8 +11,9 @@ create_tbl_files = (
     "name VARCHAR NOT NULL,"
     "abspath VARCHAR NOT NULL, "
     "size INTEGER, "
+    "filesize INTEGER, "
     "isdir INTEGER "
-    ");"
+    ")"
 )
 
 create_tbl_fs_structure = (
@@ -20,5 +21,5 @@ create_tbl_fs_structure = (
     "parent INTEGER NOT NULL, "
     "child INTEGER NOT NULL, "
     "PRIMARY KEY (parent, child)"
-    ");"
+    ")"
 )
